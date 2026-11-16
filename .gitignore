@@ -1,17 +1,21 @@
-# Python
+# 环境变量文件（包含密码和密钥）
+.env
+.env.*
+!.env.example
+
+# Python 虚拟环境
 .venv/
+venv/
+
+# 日志文件
+*.log
+
+# 检查点、临时数据、缓存
+checkpoint/
 __pycache__/
 *.pyc
-
-#Environment variables / secrets
-.env
-
-#IDE
-.vscode/
-.idea/
-
-# OS
-.DS_Store
-
-#Logs
-*.log
+*.pyo
+*.pyd
+.Python
+spark-3.5.1-bin-hadoop3/
+spark-3.5.1-bin-hadoop3.tgz
