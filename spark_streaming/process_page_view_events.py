@@ -81,7 +81,7 @@ checkpoint_path = (
 query = (
     page_view_events.writeStream
     .format("parquet")
-    .partitionBy("month", "day", "hour")
+    .partitionBy("year","month", "day", "hour")
     .option("path", output_path)
     .option("checkpointLocation", checkpoint_path)
     .outputMode("append")

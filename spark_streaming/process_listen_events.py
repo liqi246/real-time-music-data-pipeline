@@ -82,7 +82,8 @@ print(checkpoint_path)
 query = (
     listen_events.writeStream
     .format("parquet")
-    .partitionBy(
+    .partitionBy
+    (   "year",
         "month",
         "day",
         "hour"
