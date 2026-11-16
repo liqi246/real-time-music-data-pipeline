@@ -41,6 +41,7 @@ def load_hourly_event(event_name):
     # Build the OSS hourly partition path
     prefix = (
         f"streamify/{event_name}/"
+        f"year={year}/"
         f"month={month}/"
         f"day={day}/"
         f"hour={hour}/"
