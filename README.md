@@ -10,6 +10,8 @@ The pipeline simulates activity in a music application, including listening, aut
 
 The simulated user population is a generator setting, not a benchmark of concurrent real users or production throughput.
 ##  BI visual of final result
+![Uploading image.png…]()
+
 
 (https://liqi246.github.io/real-time-music-data-pipeline/report.html)
 
