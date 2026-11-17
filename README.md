@@ -11,6 +11,9 @@ This project is adapted from [ankurchavda/streamify](https://github.com/ankurcha
 The pipeline simulates activity in a music application, including listening, authentication, and page-view events. Kafka buffers the event streams; Spark parses JSON messages and writes time-partitioned Parquet files to OSS; Airflow schedules hourly loads into ClickHouse for SQL analysis.
 
 The simulated user population is a generator setting, not a benchmark of concurrent real users or production throughput.
+## 📊 BI visual 
+
+(https://liqi246.github.io/real-time-music-data-pipeline/report.html)
 
 ## Architecture
 
