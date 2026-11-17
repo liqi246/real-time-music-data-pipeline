@@ -2,8 +2,6 @@
 
 A real-time data engineering project for ingesting simulated music-streaming events, processing them with Spark Structured Streaming, storing Parquet data in Alibaba Cloud OSS, and loading hourly partitions into ClickHouse with Apache Airflow.
 
-This project is adapted from [ankurchavda/streamify](https://github.com/ankurchavda/streamify). It keeps the Eventsim → Kafka → Spark → Airflow pipeline pattern while using Alibaba Cloud OSS and ClickHouse for storage and analytics.
-
 > **Project status:** This is a learning project. The repository contains the Kafka, Spark, Airflow, and ClickHouse code/configuration, but does not currently include Eventsim launch assets or a pinned Spark installation. End-to-end behavior depends on the user's external OSS account and runtime setup. See [Limitations](#limitations) before running it.
 
 ## Project objective
@@ -11,7 +9,7 @@ This project is adapted from [ankurchavda/streamify](https://github.com/ankurcha
 The pipeline simulates activity in a music application, including listening, authentication, and page-view events. Kafka buffers the event streams; Spark parses JSON messages and writes time-partitioned Parquet files to OSS; Airflow schedules hourly loads into ClickHouse for SQL analysis.
 
 The simulated user population is a generator setting, not a benchmark of concurrent real users or production throughput.
-## 📊 BI visual 
+##  BI visual of final result
 
 (https://liqi246.github.io/real-time-music-data-pipeline/report.html)
 
